@@ -5,18 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeos - Portfólio Gabriel</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-video.css">
 </head>
 
 <body>
     <header class="navbar">
-        <a href="index.html" class="logo">Gabriel Rodrigues Lima</a>
+        <a href="index.html" class="logo">Início</a>
         <nav>
-            <a href="index.html" class="active">Início</a>
-            <a href="portfolio-videos.html">Vídeos</a>
-            <a href="portfolio-fotos.html" class="active">Fotos</a>
-            <a href="portfolio-campanhas.html" class="active">Campanhas</a>
-        </nav>
+
+  <!-- Navegação principal e responsiva -->
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html" aria-label="Ir para a página inicial">Início</a>
+    <a href="portfolio-videos.html" class="active" aria-label="Ir para os vídeos">Vídeos</a>
+    <a href="portfolio-fotos.html" aria-label="Ir para as fotos">Fotos</a>
+    <a href="portfolio-campanhas.html" aria-label="Ir para campanhas">Campanhas</a>
+  </nav>
+
+  <!-- Navegação responsiva -->
+  <nav class="nav-responsive" aria-label="Menu principal responsivo">
+    <a href="index.html" aria-label="Ir para a página inicial">Início</a>
+    <a href="portfolio-videos.html" class="active" aria-label="Ir para os vídeos">Vídeos</a>
+    <a href="portfolio-fotos.html" aria-label="Ir para as fotos">Fotos</a>
+    <a href="portfolio-campanhas.html" aria-label="Ir para campanhas">Campanhas</a>
+  </nav>
+
+  <!-- Menu Hamburguer -->
+  <div class="menu-hamburguer" aria-label="Menu móvel" role="button">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
     </header>
 
     <section class="intro">

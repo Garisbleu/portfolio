@@ -331,6 +331,51 @@ form textarea {
   resize: none;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .nav-responsive {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* Aqui a classe 'active' será adicionada via JS */
+  .nav-responsive.active {
+    display: flex;
+  }
+}
+
+/* Mover a seção de contato para o lado esquerdo */
+.contact {
+  text-align: left;
+  padding: 5px;
+}
+
+.contact .input-box {
+  justify-content: flex-start;
+}
+
+.contact .input-box input,
+.contact textarea {
+  width: 100%;
+}
+
 /* Sessão de Contato (novo layout) */
 section.contact {
   display: flex;
@@ -581,3 +626,4 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+

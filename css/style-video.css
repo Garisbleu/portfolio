@@ -72,6 +72,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
+  margin-top: -400px;
 }
 
 .video-container {
